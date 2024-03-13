@@ -1,0 +1,49 @@
+.main-container {
+  margin: 15px;
+}
+
+.block {
+  width: 200px;
+  height: 30px;
+  background-color: grey;
+  margin: 8px;
+}
+
+.validation-container.short {
+  .block {
+    background-color: red;
+  }
+}
+
+.validation-container.empty {
+  .block {
+    background-color: grey;
+  }
+}
+
+.validation-container.easy {
+  .block {
+    background-color: grey;
+  }
+
+  .block:first-child {
+    background-color: red;
+  }
+}
+
+.validation-container.medium {
+  .block {
+    background-color: yellow;
+  }
+  .block:nth-of-type(3) {
+    background-color: gray;
+  }
+}
+
+
+.validation-container.strong {
+  .block {
+    background-color: green;
+  }
+}
+
